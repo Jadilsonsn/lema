@@ -4,9 +4,9 @@ import pandas as pd
 nlp = spacy.load("pt_core_news_sm")
 
 data = {'texto': ['rápido', 'rápida', 'Correndo','correr', 
-                  'feliz','Andando','andar','10','Especialistas',
-                  'especialista','excelente','excelência','kodoma',
-                  'chamado','dúvidas','dúvida','duvida']}
+                  'Andando','andar','Especialistas',
+                  'especialista','excelente','excelência',
+                  'dúvidas','dúvida']} 
 
 df = pd.DataFrame(data)
 df['texto'] = df['texto'].str.lower() 
